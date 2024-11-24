@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-// TODO: add flutter_svg package
-// ignore: depend_on_referenced_packages
 import 'package:flutter_svg/flutter_svg.dart';
 
 class SignInScreen extends StatelessWidget {

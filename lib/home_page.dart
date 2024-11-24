@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/SolutionPage.dart';
+import 'package:myapp/plasticwaste.dart';
 
 // Main HomePage with sections for Plastic Waste and Recycling Solutions
 class HomePage extends StatelessWidget {
@@ -104,93 +106,3 @@ class HomePage extends StatelessWidget {
 }
 
 // Page showing details about Plastic Waste
-class PlasticWasteDetailPage extends StatelessWidget {
-  const PlasticWasteDetailPage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Plastic Waste Details'),
-        backgroundColor: Colors.red,
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image.asset(
-              'assets/plastic_waste.png', // Add a plastic waste image
-              height: 200,
-            ),
-            const SizedBox(height: 20),
-            const Text(
-              'Plastic Waste Details',
-              style: TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.bold,
-                color: Colors.red,
-              ),
-            ),
-            const Padding(
-              padding: EdgeInsets.all(16.0),
-              child: Text(
-                'Plastic waste is one of the leading causes of environmental pollution. It takes years to decompose and contributes to harmful waste.',
-                textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 16),
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-// Page showing details about Recycling Solutions
-class SolutionPage extends StatelessWidget {
-  const SolutionPage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Recycling Solutions'),
-        backgroundColor: Colors.green,
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image.asset(
-              'assets/recycling.png', // Add a recycling solution image
-              height: 200,
-            ),
-            const SizedBox(height: 20),
-            const Text(
-              'Recycling Solutions',
-              style: TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.bold,
-                color: Colors.green,
-              ),
-            ),
-            const Padding(
-              padding: EdgeInsets.all(16.0),
-              child: Text(
-                'Recycling plastic can help reduce pollution and conserve resources. Learn more about how you can contribute to recycling efforts.',
-                textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 16),
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-void main() {
-  runApp(const MaterialApp(
-    home: HomePage(),
-  ));
-}
