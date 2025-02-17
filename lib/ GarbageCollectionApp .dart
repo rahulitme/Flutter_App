@@ -1,3 +1,4 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
 import 'package:myapp/GarbageCollectionPage%20.dart';
 
